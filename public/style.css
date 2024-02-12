@@ -1,0 +1,29 @@
+.main {
+    display: flex;
+    margin-left: 5%;
+}
+.secondary {
+    margin-left: 2%;
+}
+.top {
+    margin-left: 5%;
+    margin-bottom:1%;
+}
+
+textarea {
+    margin-top: 10px;
+}
+
+canvas {
+    width: 800px; /* Set your preferred width */
+    height: 600px; /* Set your preferred height */
+    border: 1px solid #000;
+}
+
+input[type="color"],
+input[type="number"],
+select {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}

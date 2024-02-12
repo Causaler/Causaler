@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="top">
+        <button onclick="undo()">Undo</button>
+        <button onclick="redo()">Redo</button>
+    </div>
+    <div class="main">
+        <canvas id="canvas" width="800" height="600"></canvas>
+        <div class="secondary">
+            <input type="file" id="imageInput" accept="image/*">
+            <br>
+            <textarea id="textInput" placeholder="Enter text here"></textarea>
+            <br>
+            <input type="color" id="textColor" value="#000000">
+            <br>
+            <input type="number" id="fontSize" placeholder="Font Size">
+            <br>
+            <select id="fontFamily">
+                <option value="Arial">Arial</option>
+                <option value="Verdana">Verdana</option>
+                <option value="Courier New">Courier New</option>
+            </select>
+            <br>
+            <button onclick="addText()">Add Text</button>
+            <button onclick="saveImage()">Save Image</button>
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/3.6.0/fabric.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
